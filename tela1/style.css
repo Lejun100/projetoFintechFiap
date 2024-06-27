@@ -1,5 +1,9 @@
-.image_logo{
+.super{
     background-color: var(--bs-blue);
+}
+
+.image_logo{
+   
     align-items: center;
     image-rendering: auto;
 }
@@ -9,23 +13,29 @@
 }
 
 img{
-    width: 50em;
-    height: 50em;
+    
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-
-
-#textpage{
-    font-size: 30px;
-}
-
-.links{
-    font-size: 25px;
     
 }
 
+.areatext1{
+    margin-bottom: 10%;
+}
 
+#text1{
+    margin-top: 10px;
+}
+
+#textpage{
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.links{
+    font-size: 2em;
+    
+}
 
 
