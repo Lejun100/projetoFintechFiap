@@ -1,0 +1,191 @@
+.backoffice-header {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .nav-toggle{
+        display: none;
+    }
+    .navbar-brand {
+        display: none;
+    }
+    .navbar {
+        width: 80%;
+        height: 80px;
+        background-color: #530E13;
+        border-radius: 15px;
+        display: flex;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        .navbar-nav {
+            width: 95%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            .nav-item {
+                padding: 0;
+                border-radius: 15px;
+                .nav-link {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 80px;
+                    padding: 0 2em;
+                    font-size: 1.2em;
+                    font-weight: 500;
+                    color: #fff;
+                    border-radius: 15px;
+    
+                    
+                    svg {
+                        margin-right: 8px;
+                        path {
+                            fill: #fff;
+                        }
+                    }
+                    
+                }
+                .active {
+                    background-color: #fff;
+                    color: #EA1D2C;
+                    border-radius: 15px;
+                    svg {
+                        margin-right: 8px;
+                        path {
+                            fill: #EA1D2C;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .backoffice-header {
+        
+        .nav-toggle{
+            display: none;
+        }
+        .navbar {
+            width: 100%;
+            .navbar-nav {
+                .nav-item {
+                    .nav-link {
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 98%;
+        padding: 0;
+    }
+    .backoffice-header {
+
+        height: 100%;
+        padding: 15px 0;
+        
+        .nav-toggle {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            position: relative;
+
+            svg {
+                width: 28px;
+                transition: opacity 0.3s ease, transform 0.3s ease;
+                path {
+                    fill:#fff;
+                }
+            }
+        }
+        
+        #open-toggle {
+            opacity: 0;
+            transform: translateY(-10px);
+            display: block;
+        }
+        
+        /* Estado visível do ícone de abrir */
+        #open-toggle.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        #close-toggle {
+            position: absolute;
+            opacity: 0;
+            transform: translateY(-10px);
+            display: block;
+        }
+        
+        /* Estado visível do ícone de fechar */
+        #close-toggle.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Adiciona uma margem ao logo para centralizar */
+        .navbar-brand {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .navbar-brand img {
+            width: 70%;
+        }
+
+        #navbar-toggle {
+            opacity: 0;
+            transform: translateY(-10px);
+            display: none; /* Começa escondido */
+            transition: opacity 0.5s ease, transform 0.5s ease-in-out;
+        }
+        
+        #navbar-toggle.visible {
+            opacity: 1;
+            transform: translateY(0);
+            display: flex; /* Torna o menu visível */
+        }
+        
+        .navbar{
+            padding: 0;
+            margin: 0;
+            display: flex;
+            z-index: 100;
+            .navbar-nav{
+                margin-top: -12px;
+                width: 100%;
+                flex-direction: column;
+                background-color: #530E13;
+                border-radius: 0 0 15px 15px;
+                padding-bottom: 15px;
+                transition: transform 0.3s ease-in-out;
+                .nav-item {
+                    width: 100%;
+                    padding: 0;
+                    border-radius: 15px;
+                    .nav-link {
+                        font-size: 1.4em;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+*, 
+*:after,
+*:before, html, h1,h2,h3,h4,h5,p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-size: 100%;
+    list-style-type: none;
+    cursor: default;
+    .row {
+        margin: 0;
+    }
+}
+
+
+input[type="number"].form-control::-webkit-outer-spin-button,
+input[type="number"].form-control::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0;
+}
+
+/* Para Firefox */
+input[type="number"].form-control {
+    -moz-appearance: textfield !important;
+}
+
+/* Para remover completamente o estilo padrão */
+input[type="number"].form-control {
+    appearance: none !important;
+}

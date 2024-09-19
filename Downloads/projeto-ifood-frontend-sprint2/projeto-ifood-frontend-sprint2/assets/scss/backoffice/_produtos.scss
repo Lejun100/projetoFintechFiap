@@ -1,0 +1,28 @@
+.produtos-content-header{
+    margin-bottom: 20px;
+    margin-left: 70px;
+}
+
+.produtos-content-card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    
+}
+
+.produtos-item{
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+}   
+
+.rank{
+    padding: 10px 0;
+    width: 100%;
+    display: block;
+    text-align: end;
+
+
+}

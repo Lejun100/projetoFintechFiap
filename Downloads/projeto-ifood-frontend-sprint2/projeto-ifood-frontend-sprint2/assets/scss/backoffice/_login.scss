@@ -1,0 +1,242 @@
+.bg-image {
+  background-image: url("./../img/bg/bg-login.png") !important;
+  background-size: cover;
+  background-position: center;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-conteudo {
+  width: 80%;
+  height: 600px;
+  //padding: 0;
+  //margin: 0;
+  box-shadow: #939393 0 0 12px;
+  border-radius: 15px;
+
+}
+
+.bem-vindo {
+    background: #EA1D2C;
+    color: white;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 15px 0 0 15px;
+    margin-top: 0;
+
+    .bem-vindo-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #EA1D2C;
+    }
+
+    .bem-vindo-main {
+      background: #EA1D2C;
+      height: 20%;
+      padding: 0;
+
+      h1 {
+        font-size: 2.3em;
+        font-weight: 900;
+        padding: 0;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 1.3em;
+        font-weight: 500;
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+
+    .bem-vindo-footer {
+      display: flex;
+      align-items: center;
+    }
+}
+
+.login-form {
+  height: 100%;
+  background: #FFFAFA;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 0 15px 15px 0;
+  margin-top: 0;
+  color: #A5A5A5;
+
+  .login-form-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 180px;
+    color: $color-primary;
+
+    h2 {
+      font-size: 3em;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    span {
+      color: #bbb;
+      font-size: 1.3em;
+    }
+  }
+
+  .login-form-main {
+    width: 80%;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    .input-group{
+      margin-bottom: 10px;
+
+      .input-group-text{
+        background: $color-light-c;
+        padding: 15px 20px;
+      }
+
+      .form-control{
+        background: $color-light-c;
+        font-size: 1.2em;
+        color: #6e6e6e;
+        &:focus{
+          border-color: $color-primary;
+          outline: $color-primary 1.2px solid;
+          box-shadow: none;
+        }
+      }
+
+      //.error{
+      //  //display: none;
+      //  //color: #EA1D2C;
+      //}
+    }
+
+    .frase-reset-senha{
+      width: 100%;
+      align-items: flex-start;
+      text-align: left;
+      margin-left: 0;
+      padding-bottom: 50px;
+    }
+
+    .link-reset-senha{
+      text-decoration: none;
+      width: 100%;
+      color: $color-primary;
+    }
+
+  }
+
+  .login-form-footer {
+    width: 80%;
+    height: 50px;
+    margin-top: 0;
+    text-align: center;
+
+    .link-cadastro{
+      color: $color-primary;
+      text-decoration: none;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .bem-vindo {
+
+    .bem-vindo-main {
+      h1 {
+        font-size: 2em;
+      }
+  
+      p {
+        font-size: 1.2em;
+      }
+    }
+  }
+  .login-form {
+    .frase-reset-senha {
+      padding-bottom: 50px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .login-conteudo {
+    width: 100%;
+    
+  }
+  .bem-vindo {
+
+    .bem-vindo-main {
+      h1 {
+        font-size: 1.8em;
+      }
+  
+      p {
+        font-size: 1.1em;
+      }
+    }
+  }
+  .login-form {
+    .frase-reset-senha {
+      padding-bottom: 50px;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .bem-vindo {
+    display: none;
+  }
+  .login-form {
+    width: 95%;
+    padding: 0;
+    margin: 0 auto;
+
+    .login-form-header {
+      text-align: center;
+      h2 {
+        font-size: 2.5em;
+      }
+    }
+    .login-form-main {
+      width: 95%;
+      margin: 0;
+      padding: 0;
+      .input-group {
+        .form-control {
+          font-size: 1em;
+          color: #6e6e6e;
+        }
+      }
+      
+    }
+    .frase-reset-senha {
+      padding-bottom: 50px;
+    }
+  }
+
+
+}
+
+

@@ -1,0 +1,330 @@
+.entregas-card {
+    min-width: 340px;
+    min-height: 340px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.entregas-card-header {
+    display: flex;
+    height: 30%;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.entregas-card-header-text {
+    width: 80%;
+    height: 100%;
+    text-wrap: nowrap;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.entregas-card-header-text h4 {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #3DBE00;
+}
+
+.entregas-card-pic {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+}
+
+.entregas-card-pic img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.entregas-delivery-name {
+    text-overflow: ellipsis;
+    width: 100%;
+    font-size: .9rem;
+}
+
+.entregas-order {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: .9rem;
+}
+
+.entregas-order span {
+    font-weight: bold;
+}
+
+.entregas-card-body {
+    height: 45%;
+    width: 100%;
+    border-bottom: 1px solid #ECECEC;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.entregas-card-body-line {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 30%;
+    width: 90%;
+}
+
+.entregas-card-svg-wrapper {
+    height: 100%;
+    width: 20%;
+}
+
+.entregas-card-body-line svg, .entregas-card-body-line svg path {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1;
+}
+
+.entregas-card-body-line-text h4 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.entregas-card-footer {
+    display: flex;
+    height: 25%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.entregas-card-footer-wrapper {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: 10px;
+    width: 70%;
+    height: 100%;
+}
+
+.entregas-card-footer-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.entregas-card-footer-text h4 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.entregas-card-customer-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: .9rem;
+    color: #B0B0B0;
+}
+
+.entregas-card-customer-location {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: .9rem;
+    color: #484A58;
+}
+
+.entregas-card-footer-img img {
+    border-radius: 50%;
+}
+
+.entregas-card-buttons {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.entregas-card-buttons svg {
+    height: 50%;
+    width: 50%;
+}
+
+.entregas-content {
+    height: 67vh;
+    overflow: hidden;
+}
+
+.entregas-toggle {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.entregas-contents {
+    width: calc(100% - 360px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.entregas-iframe-wrapper {
+    width: 95%;
+    height: 70%;
+}
+
+.entregas-iframe-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 15px;
+}
+
+.entregas-iframe-wrapper iframe:focus {
+    outline: none;
+    border: none;
+}
+
+.entrega-cards-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    width: 360px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+    direction: rtl;
+}
+
+.entrega-cards-container::-webkit-scrollbar {
+    width: 7px;
+}
+
+.entrega-cards-container::-webkit-scrollbar-thumb {
+    background-color: #888; /* Cor da barra de rolagem */
+    border-radius: 10px; /* Arredondamento da barra de rolagem */
+}
+
+.entrega-cards-container::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Cor de fundo da trilha da scrollbar */
+}
+
+.entrega-cards-container div {
+    direction: ltr;
+}
+
+.entregas-stats {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.entregas-stat {
+    width: 24%;
+    height: 80px;
+    background-color: white;
+    border-radius: 10px;
+    padding: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.line h5 {
+    font-size: .8rem;
+    font-weight: bold;
+    text-wrap: nowrap;
+    margin: auto;
+}
+
+.line-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.entregas-grown {
+    font-size: .6rem;
+    color: #3DBE00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3px;
+}
+
+.entregas-grown.bad {
+    color: #FF0000;
+}
+
+.line.bottom {
+    width: 80%;
+}
+
+@media screen and (max-width: 1200px) {
+    .entregas-content {
+        height: auto;
+    }
+    .entregas-toggle {
+        flex-direction: column;
+    }
+    .entrega-cards-container {
+        flex-direction: row;
+        column-gap: 15px;
+        min-height: 400px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .entregas-contents {
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    .entregas-stats {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+    }
+    .entregas-stat {
+        width: 100%;
+    }
+    .entregas-iframe-wrapper {
+        margin-bottom: 25px;
+    }
+    .entregas-iframe-wrapper iframe {
+        height: 100%;
+    }
+    .entregas-card {
+        min-width: 320px;
+        min-height: 320px;
+    }
+}
